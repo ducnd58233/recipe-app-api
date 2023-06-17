@@ -12,3 +12,6 @@ docker-compose-create-django:
 
 docker-up:
 	docker compose up
+
+unit-tests:
+	docker-compose run --rm app sh -c "python manage.py test"
