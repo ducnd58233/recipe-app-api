@@ -2,6 +2,7 @@ version: "3.9" # version docker-compose syntax
 
 services:
   app:
+    container_name: recipe-app-api
     build:
       context: . # build Dockerfile inside current directory
       args:
